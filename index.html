@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS USERS</title>
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- boxicons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <div class="header bg-white">
+            <div class="side_bar">
+                <button class="btn btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class='bx bx-menu'></i></button>
+    
+                <div class="offcanvas offcanvas-start background1" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <img src="./assets/image/Icons/Icons/ats_logo.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav_menus">
+                            <li><a href="#"><img src="./assets/image/Icons/Icons/Admin/dashboard.svg" alt=""> Dashboard</a></li>
+                            <li><a href="#"><img src="./assets/image/Icons/Icons/Admin/task_list.svg" alt=""> Task View</a></li>
+                            <li><a href="#"><img src="./assets/image/Icons/Icons/Admin/schedule.svg" alt=""> Schedule</a></li>
+                            <li><a href="#"><img src="./assets/image/Icons/Icons/User/timesheet.svg" alt=""> Timesheet</a></li>
+                            <li><a href="#"><img src="./assets/image/Icons/Icons/Admin/invoice.svg" alt=""> Invoice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="users">
+                <img src="./assets/image/Icons/Icons/Admin/clarity_notification-solid.svg" alt="">
+                <p>User</p>
+                <img src="./assets/image/Icons/Icons/Admin/user_profile.svg" alt="">
+            </div>
+        </div>
+        <!-- time sheet section start -->
+        <section class="timesheet">
+            <div class="timesheet_head">
+                <div class="left">
+                    <h3>Timesheet</h3>
+                    <div class="input d-flex align-items-center">
+                        <div class="inps bg-white">
+                            <input type="text" class="search_inp" name="" id="" placeholder="Search">
+                            <i class="bx bx-search sear_icon"></i>
+                        </div>
+                    </div>
+                    <div class="selections">
+                        <span class="ms-3">Show</span>
+                        <select name="entries" id="entries">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn p-2 d-flex align-items-center time-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/image/Icons/Icons/User/fill_timesheet.svg" alt=""> Dailly TimeSheet</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- table section start -->
+            <div class="table-responsive table-bordered tables">
+                <table class="table text-center bg-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">Project name</th>
+                        <th scope="col">Staff member</th>
+                        <th scope="col">Check in</th>
+                        <th scope="col">Checkout</th>
+                        <th scope="col">Total Amount</th>
+                        <th scope="col">Work status</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Buy any equipment</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-warning">Pending</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-warning">Onhold</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-warning">Onhold</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                      <tr>
+                        <td>Mountain View</td>
+                        <td>Alexzender McQueen</td>
+                        <td>8:00 am</td>
+                        <td>6:00 pm</td>
+                        <td>$510.34</td>
+                        <td><button class="btn btn-outline-success">Completed</button></td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>08-23-2022</td>
+                        <td><i class='bx bx-dots-vertical-rounded' style='color:#ef6618'  ></i></td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+            </div>
+            <!-- table section end -->
+        </section>
+        <!-- time sheet section end -->
+    
+        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

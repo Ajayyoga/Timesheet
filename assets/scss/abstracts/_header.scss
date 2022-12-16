@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+
+    .offcanvas-header{
+        img{
+            width: 125px;
+            height: 55px;
+        }
+    }
+
+    .background1{
+        background-color: #002664;
+    }
+    .nav_menus{
+        padding: 0 5px;
+        li{
+            padding: 15px 0;
+            border-bottom: 2px solid #fff;
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 22px;
+                img{
+                    width: 24.5px;
+                    height: 24.5px;
+                    margin: 0 10px;
+                }
+                &:hover{
+                    color: #ef6618;
+                }
+            }
+        }
+    }
+    .users{
+        display: flex;
+        align-items: center;
+        p{
+            margin: 0 5px;
+        }
+    }
+}
+

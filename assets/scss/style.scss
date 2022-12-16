@@ -1,0 +1,72 @@
+@import "./abstracts/common";
+@import "./abstracts/header";
+@import "./mixins/breakpoints";
+
+
+
+
+// Timesheet section start
+
+.timesheet{
+    .timesheet_head{
+        @include media-min-md-x{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        *{
+            padding: 5px 0;
+            outline: none;
+        }
+
+        .left{
+            @include media-min-md-x{
+                display: flex;
+                align-items: center;
+            }
+            h3{
+                font-size: 22px;
+                color: #002664;
+            }
+            
+            .input{
+                @include media-min-md-x{
+                    margin: 0 0 0 20px;
+                }
+                border: none;
+                .inps{
+                    position: relative;
+                    width: 100%;
+                    .search_inp{
+                        border: none;
+                        padding: 5px 30px 5px 10px !important;
+                        width: 100%;
+                    }
+                    .sear_icon{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #656866;
+                    }
+                }
+            }
+            .selections{
+                #entries{
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .right{
+            .time-btn{
+                background-color: #fc630a;
+                color: #fff;
+                img{
+                    width: 14px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
